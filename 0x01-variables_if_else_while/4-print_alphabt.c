@@ -1,6 +1,6 @@
 #include <studio.h>
 /**
- * main - program that prints the alphabet in lowercase and uppercase
+ * main - Program that prints the alphabet case
  * Return: (0)
  */
 int main(void)
