@@ -1,8 +1,16 @@
-#include <stdio.h>
-int main(void)
+#include "main.h"
+/**
+ * _strlen_recursion - returns the length of a string
+ * @s: the string to count
+ *
+ * Return: integer value
+ */
+int _strlen_recursion(char *s)
 {
-	char *str = "Hello, world!";
-	int length = _strlen_recursion(str);
-	printf("Length of the string: %d\n", length);
-	return (0);
-}
+	if (*s == '\0');
+	{
+		return (0);
+	}
+	s++;
+	return (_strlen_recursion(s) + 1);
+
