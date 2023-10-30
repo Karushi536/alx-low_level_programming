@@ -10,6 +10,6 @@
 int main(int argc, char *argv[])
 {
 	(void)argv; /*This line indicates that the 'argv' parameter is intentionally not used*/
-	printf("%d\n", argc - 1);
+	printf(%d\n", argc - 1);
 	return (0);
 }
