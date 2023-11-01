@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main - program that multiplies two numbers 
- * argc: number of arguments
- * argv: array of arguments
+ * main - program that multiplies two numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
  * Return: Always 0 success
  */
@@ -14,7 +14,7 @@ int num1, num2, result;
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
