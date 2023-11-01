@@ -3,10 +3,11 @@
 #include <string.h>
 #include "main.h"
 /**
- * _strdup - Duplicates a string and allocates memory for the copy.
- * @str: char
+ * _strdup - function that returns a pointer to a newly allocated space in memory
+ * which contains a copy of the string given as a parameter.
+ * @str: The source string to duplicate.
  *
- * Returns: *pnt success
+ * Returns: *pnt
  */
 char *_strdup(char *str)
 {
