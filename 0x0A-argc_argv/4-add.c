@@ -12,21 +12,26 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i = 1;
+
 	if (argc == 1)
+
 	{
 		printf("0\n");
 		return (0);
 	}
 	char *arg;
-	int num,j;
-	while (i < argc){
+	int num, j;
+
+	while (i < argc)
+	{
 		char *arg = argv[i];
+
 		num = 0;
 		j = 0;
-		
+
 		while (arg[j] != '\0')
 		{
-			if(arg[j] < '0' || arg[j] > '9')
+			if (arg[j] < '0' || arg[j] > '9')
 			{
 				printf("Error\n");
 				return (1);
