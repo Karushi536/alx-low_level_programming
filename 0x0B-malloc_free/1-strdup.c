@@ -6,22 +6,24 @@
  * _strdup - Duplicates a string and allocates memory for the copy.
  * @str: char
  *
- * Returns: a pointer to the duplicated string, or NULL on failure.
+ * Returns: *pnt success
  */
 char *_strdup(char *str)
 {
+	int k;
+	char *pnt;
+	int j = 0;
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	int length;
-	size_t length = strlen(str);
-	char *duplicate = (char *)malloc(length + 1);
+	for (k = 0; str[k] != '\0'; k++)
+		j++;
 
-	if (duplicate == NULL)
-	{
+	pnt = malloc(sizeof(char) * j + 1);
+	if (pnt == NULL)
 		return (NULL);
-	}
-	strcpy(duplicate, str);
-	return (duplicate);
+	for (k = 0; str[k] != '\0'; k++)
+		pnt[k] = str[k];
+
+	return (pnt);
+
 }
