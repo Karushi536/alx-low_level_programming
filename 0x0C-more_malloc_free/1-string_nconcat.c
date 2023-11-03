@@ -12,50 +12,35 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	unsigned int x, y, z;
+	char *s;
+
 	if (s1 == NULL)
 	{
-		s1 = "";
+		x = 0;
+	}
+	else {
+		for (x = 0; s1[x]; ++x);
 	}
 
 	if (s2 == NULL)
 	{
-		s2 = "";
-	}
-	len_s1 = strlen(s1);
-	len_s2 = strlen(s2);
-
-	if (n >= len_s2)
-	{
-		n = len_s2;
-	}
-	total_length = len_s1 + n;
-
-	char *result = (char *)malloc(total_length + 1);
-
-	if (result == NULL)
-	{
-		return (NULL);
-	}
-	strcpy(result, s1);
-	strncat(result, s2, n);
-	return (result);
-}
-int main(void)
-{
-	char *s1 = "Hello, ";
-	char *s2 = "World!";
-	n = 7;
-
-	char *concatenated = string_nconcat(s1, s2, n);
-
-	if (concatenated != NULL)
-	{
-		printf("Concatenated string: %s\n", concatenated);
-		free(concatenated);
+		y = 0;
 	}
 	else
 	{
-		printf("Failed to concatenate strings.\n");
+		for (y = 0; s2[y]; ++y);
 	}
-	return (0);
+	
+	if (y > n)
+	y = n;
+	s = malloc(sizeof(char) * (x + y + 1));
+	if (s == NULL)
+		return (NULL);
+	for (z = 0; z < x; z++)
+		s[z] = s1[z];
+	for (z = 0; z < y; z++)
+		s[z + x] = s2[z];
+	s[x + y] = '\0';
+	return (s);
 }
