@@ -21,14 +21,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	unsigned int len_s1 = strlen(s1);
-	unsigned int len_s2 = strlen(s2);
+	len_s1 = strlen(s1);
+	len_s2 = strlen(s2);
 
 	if (n >= len_s2)
 	{
 		n = len_s2;
 	}
-	unsigned int total_length = len_s1 + n;
+	total_length = len_s1 + n;
 
 	char *result = (char *)malloc(total_length + 1);
 
@@ -44,7 +44,7 @@ int main(void)
 {
 	char *s1 = "Hello, ";
 	char *s2 = "World!";
-	unsigned int n = 7;
+	n = 7;
 
 	char *concatenated = string_nconcat(s1, s2, n);
 
@@ -59,5 +59,3 @@ int main(void)
 	}
 	return (0);
 }
-
-
