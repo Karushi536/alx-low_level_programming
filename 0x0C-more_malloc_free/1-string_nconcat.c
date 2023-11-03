@@ -3,7 +3,8 @@
 #include <string.h>
 #include "main.h"
 /**
- * string_nconcat - Concatenates two strings with a maximum length from the second string.
+ * string_nconcat - Concatenates two strings with a maximum
+ * length from the second string.
  * @s1: The first string.
  * @s2: The second string.
  * @n: The maximum number of characters from s2 to concatenate.
@@ -19,8 +20,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		x = 0;
 	}
-	else {
-		for (x = 0; s1[x]; ++x);
+	else
+
+	{
+
+		for (x = 0);
+		{
+			s1[x];
+			++x;
+		{
 	}
 
 	if (s2 == NULL)
@@ -28,10 +36,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		y = 0;
 	}
 	else
+
 	{
-		for (y = 0; s2[y]; ++y);
+
+		for (y = 0);
+		{
+			s2[y];
+			++y;
+		}
 	}
-	
+
 	if (y > n)
 	y = n;
 	s = malloc(sizeof(char) * (x + y + 1));
