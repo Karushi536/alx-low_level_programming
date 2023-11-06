@@ -3,6 +3,7 @@
 
 /**
  * dogh - defining a struct dog with the following elements
+ * struct dog - dogs basic description
  * name: that stores the name of the dog
  * age: represents the age of the dog
  * owner: stores the name of the dog's owner
@@ -11,12 +12,12 @@
  */
 struct dog
 {
-	char *name;
-	float age;
-	char *owner;
+	char *name; /* Name of the dog */
+	float age; /* Age of the dog*/
+	char *owner; /* Owner's name*/
 };
 
-int struc(void)
+int dogh(void)
 {
 	struct dog user;
 
