@@ -5,7 +5,7 @@
  * struct dog - dogs basic description
  * @name: that stores the name of the dog
  * @age: represents the age of the dog
- * @owner: stores the name of the dog's owner
+ * @owner: stores the name of the dogs owner
  *
  * author: KarushiAbigael
  */
