@@ -1,14 +1,13 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef HEADER_FILE
+#define HEADER_FILE
 
 /**
- * dogh - defining a struct dog with the following elements
  * struct dog - dogs basic description
- * name: that stores the name of the dog
- * age: represents the age of the dog
- * owner: stores the name of the dog's owner
+ * @name: that stores the name of the dog
+ * @age: represents the age of the dog
+ * @owner: stores the name of the dog's owner
  *
- * Return: Always 0
+ * Description: Longer description
  */
 struct dog
 {
@@ -17,18 +16,19 @@ struct dog
 	char *owner; /* Owner's name*/
 };
 
-int dogh(void)
-{
-	struct dog user;
+/**
+ * dog_t - typedef for struct dog
+ *
+ */
 
-	user.name = "Poppy";
-	user.age = 3.5;
-	user.owner = "Bob";
+typedef struct dog dog_t;
 
-	printf("Name: %s\n", user.name);
-	printf("Age: %.1f\n", user.age);
-	printf("Owner; %s\n", user.owner);
+#include <stdlib.h>
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+char *_strcpy(char *dest, char *src);
+int _strlen(char *s);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
-	return (0);
-}
 #endif
