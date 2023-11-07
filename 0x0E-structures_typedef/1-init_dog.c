@@ -20,17 +20,3 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		d->age = age;
 		d->owner = owner;
 }
-int main(void)
-{
-	/* This is the main function where the program execution starts*/
-	/* It initializes a dog structure and prints some information about the dog*/
-	struct dog my_dog;
-	char name[] = "poppy";
-	char owner[] = "Bob";
-
-	init_dog(&my_dog, name, 3.5, owner);
-
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-
-	return (0);
-}
