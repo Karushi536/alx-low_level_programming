@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** main - program that prints the opcodes of its own main function
+/**
+ * main - program that prints the opcodes of its own main function
  * @argc: argc count
  * @argv: argv; in array form
  *
  * Return: 0 on implementatuion success
+ *
  */
-int main(int argc, char*argv[])
+int main(int argc, char *argv[])
 {
 	int bytes, i;
 	char *arr;
