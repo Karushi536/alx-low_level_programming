@@ -9,7 +9,7 @@
  * Return: index of first element cmp function return 0,
  * -1 for no match or negative size
  */
-int int int_index(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int x;
 
