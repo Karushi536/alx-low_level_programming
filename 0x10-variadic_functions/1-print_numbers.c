@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
  * print_numbers - prints numbers, followed by a new line
  * @separator: pointer of parameter
