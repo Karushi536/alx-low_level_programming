@@ -40,7 +40,7 @@ void guide(unsigned char *el_ify)
 
 	max_range = EI_NIDENT - 1;
 	printf("  Magic:   ");
-	for (b = 0; b < max_range; p++)
+	for (b = 0; b < max_range; b++)
 		printf("%02x ", *(el_ify + b));
 	printf("%02x\n", *(el_ify + b));
 }
