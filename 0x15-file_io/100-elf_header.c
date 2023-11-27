@@ -35,14 +35,14 @@ void check(unsigned char *el_ify)
 
 void guide(unsigned char *el_ify)
 {
-	int p;
+	int b;
 	int max_range;
 
 	max_range = EI_NIDENT - 1;
 	printf("  Magic:   ");
-	for (p = 0; p < max_range; p++)
-		printf("%02x ", *(el_ify + p));
-	printf("%02x\n", *(el_ify + p));
+	for (b = 0; b < max_range; p++)
+		printf("%02x ", *(el_ify + b));
+	printf("%02x\n", *(el_ify + b));
 }
 
 /**
